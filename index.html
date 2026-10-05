@@ -57,6 +57,8 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(3.4rem,11vw,7.5rem
 .facts div{display:grid;gap:2px}
 .facts dt{color:var(--muted);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
 .facts dd{margin:0}
+.old-date{color:var(--muted);text-decoration:line-through;margin-right:6px}
+.new-date{color:var(--red);font-weight:600}
 .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .btn{font:600 .95rem var(--body);border-radius:999px;padding:11px 20px;border:1px solid var(--fg);background:var(--fg);color:var(--bg);text-decoration:none;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--fg)}
@@ -181,8 +183,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <dl class="facts">
           <div><dt>When</dt><dd>26–30 April 2027</dd></div>
           <div><dt>Where</dt><dd>Marrakesh, Morocco</dd></div>
-          <div><dt>Abstract due</dt><dd>23 Oct 2026 AoE</dd></div>
-          <div><dt>Papers due</dt><dd>30 Oct 2026 AoE</dd></div>
+          <div><dt>Abstract due</dt><dd><span class="old-date">9 Oct 2026</span><span class="new-date">23 Oct 2026 AoE</span></dd></div>
+          <div><dt>Papers due</dt><dd><span class="old-date">16 Oct 2026</span><span class="new-date">30 Oct 2026 AoE</span></dd></div>
         </dl>
         <div class="cta">
           <a class="btn" href="#cfp">Read the Call for Papers</a>
@@ -202,7 +204,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </div>
     </div>
   </section>
-<script type="application/json" id="news-data">[{"id":"n1","date":"2026-09-29","text":"The TRUST-XR call for papers is out. Abstracts are due 23 October 2026 and full papers 30 October 2026 (AoE)."}]</script>
+<script type="application/json" id="news-data">[{"id":"n1","date":"2026-09-29","text":"The TRUST-XR call for papers is out. Abstracts are due 23 October 2026 and full papers 30 October 2026 (AoE)."},{"id":"n2","date":"2026-10-05","text":"The TRUST-XR abstract and paper submission deadlines have been extended. See Important Dates below for the updated schedule."}]</script>
 
   <section id="about">
     <div class="wrap sec-head">
@@ -248,8 +250,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <p class="prose" style="margin:0;color:var(--muted)">All deadlines are 23:59 Anywhere on Earth (UTC−12).</p>
       </div>
       <ol class="timeline" id="timeline">
-        <li data-date="2026-10-23"><time>23 Oct 2026</time><span class="dot"></span><span class="what">Special session paper abstract submission</span></li>
-        <li class="key" data-date="2026-10-30"><time>30 Oct 2026</time><span class="dot"></span><span class="what">Special session paper submission</span></li>
+        <li data-date="2026-10-23"><time><span class="old-date">9 Oct 2026</span><span class="new-date">23 Oct 2026</span></time><span class="dot"></span><span class="what">Special session paper abstract submission</span></li>
+        <li class="key" data-date="2026-10-30"><time><span class="old-date">16 Oct 2026</span><span class="new-date">30 Oct 2026</span></time><span class="dot"></span><span class="what">Special session paper submission</span></li>
         <li data-date="2026-12-20"><time>20 Dec 2026</time><span class="dot"></span><span class="what">Notification to authors</span></li>
         <li data-date="2027-01-26"><time>26 Jan 2027</time><span class="dot"></span><span class="what">Camera-ready submission</span></li>
         <li class="key" data-date="2027-04-30"><time>26–30 Apr 2027</time><span class="dot"></span><span class="what">IEEE FG 2027<span class="note">Marrakesh, Morocco</span></span></li>
@@ -264,8 +266,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <p class="prose" style="margin:0;color:var(--muted)">Special session papers go through the IEEE FG 2027 submission process. See the <a href="https://fg2027.ieee-biometrics.org/call-for-papers/">FG 2027 call for papers</a> for full author guidelines.</p>
       </div>
       <div class="submit-grid">
-        <div><span class="label">How to submit</span><p>Submit through the <strong>IEEE FG 2027 submission system</strong> and select the <strong>TRUST-XR</strong> special session. Link coming soon!</p></div>
-        <div><span class="label">Format and review</span><p>Papers follow the FG 2027 paper format, page limits and review policy.</p></div>
+        <div><span class="label">How to submit</span><p>Submit via the official FG 2027 <strong>CMT</strong> system at <a href="https://cmt3.research.microsoft.com/FG2027" target="_blank" rel="noopener">cmt3.research.microsoft.com/FG2027</a>, choosing the <strong>TRUST-XR</strong> special session track. Select <strong>TRUST-XR</strong> as the Primary Subject Area in CMT.</p></div>
+        <div><span class="label">Format and review</span><p>Use the official <strong>FG 2027 author kit</strong> and follow its formatting, anonymization, page-limit and supplementary-material requirements &mdash; identical to the main conference.</p></div>
         <div><span class="label">Publication</span><p>Accepted papers are published and presented according to FG 2027 special session policies.</p></div>
       </div>
     </div>
@@ -299,16 +301,16 @@ TOPICS OF INTEREST include but are not limited to:
 * Usable privacy, consent, transparency, and user control in immersive interfaces
 
 IMPORTANT DATES (23:59 AoE)
-* Paper abstract submission: 23 October 2026
-* Paper submission: 30 October 2026
+* Paper abstract submission: <span class="old-date">9 October 2026</span><span class="new-date">23 October 2026</span>
+* Paper submission: <span class="old-date">16 October 2026</span><span class="new-date">30 October 2026</span>
 * Notification to authors: 20 December 2026
 * Camera-ready submission: 26 January 2027
 * IEEE FG 2027: 26-30 April 2027
 
 SUBMISSION
-Submit through the IEEE FG 2027 submission system and select the TRUST-XR special session. Link coming soon! Papers must follow the FG 2027 format, page limits and review policy. Accepted papers are published and presented according to FG 2027 special session policies.
+Special Session papers must follow the same formatting and page-limit requirements as regular FG 2027 submissions. Authors should use the official FG 2027 author kit and carefully follow the formatting, anonymization, supplementary-material, and submission requirements specified in the FG 2027 Call for Papers. Special Session papers must be submitted via CMT and follow the same procedure as Main Conference papers, choosing the special session track within the main FG 2027 CMT system: https://cmt3.research.microsoft.com/FG2027. Papers submitted to any Special Session must select the name of the Special Session (TRUST-XR) as the Primary Subject Area in CMT. Accepted papers are published and presented according to FG 2027 special session policies.
 
-Refer to <a href="https://fg2027.ieee-biometrics.org/" target="_blank" rel="noopener">FG 2027 website</a> for details.</div>
+Refer to <a href="https://fg2027.ieee-biometrics.org/call-for-special-session-papers/" target="_blank" rel="noopener">FG 2027 Special Session website</a> for details.</div>
     </div>
   </section>
 
