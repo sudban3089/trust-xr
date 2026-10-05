@@ -181,8 +181,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <dl class="facts">
           <div><dt>When</dt><dd>26–30 April 2027</dd></div>
           <div><dt>Where</dt><dd>Marrakesh, Morocco</dd></div>
-          <div><dt>Abstract due</dt><dd>9 Oct 2026 AoE</dd></div>
-          <div><dt>Papers due</dt><dd>16 Oct 2026 AoE</dd></div>
+          <div><dt>Abstract due</dt><dd>23 Oct 2026 AoE</dd></div>
+          <div><dt>Papers due</dt><dd>30 Oct 2026 AoE</dd></div>
         </dl>
         <div class="cta">
           <a class="btn" href="#cfp">Read the Call for Papers</a>
@@ -202,7 +202,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </div>
     </div>
   </section>
-<script type="application/json" id="news-data">[{"id":"n1","date":"2026-09-29","text":"The TRUST-XR call for papers is out. Abstracts are due <del>9</del> <ins>23</ins> October 2026 and full papers <del>23</del> <ins>30</ins> October 2026 (AoE)."}]</script>
+<script type="application/json" id="news-data">[{"id":"n1","date":"2026-09-29","text":"The TRUST-XR call for papers is out. Abstracts are due 23 October 2026 and full papers 30 October 2026 (AoE)."}]</script>
 
   <section id="about">
     <div class="wrap sec-head">
@@ -248,8 +248,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <p class="prose" style="margin:0;color:var(--muted)">All deadlines are 23:59 Anywhere on Earth (UTC−12).</p>
       </div>
       <ol class="timeline" id="timeline">
-        <li data-date="2026-10-09"><time>9 Oct 2026</time><span class="dot"></span><span class="what">Special session paper abstract submission</span></li>
-        <li class="key" data-date="2026-10-16"><time>16 Oct 2026</time><span class="dot"></span><span class="what">Special session paper submission</span></li>
+        <li data-date="2026-10-23"><time>23 Oct 2026</time><span class="dot"></span><span class="what">Special session paper abstract submission</span></li>
+        <li class="key" data-date="2026-10-30"><time>30 Oct 2026</time><span class="dot"></span><span class="what">Special session paper submission</span></li>
         <li data-date="2026-12-20"><time>20 Dec 2026</time><span class="dot"></span><span class="what">Notification to authors</span></li>
         <li data-date="2027-01-26"><time>26 Jan 2027</time><span class="dot"></span><span class="what">Camera-ready submission</span></li>
         <li class="key" data-date="2027-04-30"><time>26–30 Apr 2027</time><span class="dot"></span><span class="what">IEEE FG 2027<span class="note">Marrakesh, Morocco</span></span></li>
@@ -299,8 +299,8 @@ TOPICS OF INTEREST include but are not limited to:
 * Usable privacy, consent, transparency, and user control in immersive interfaces
 
 IMPORTANT DATES (23:59 AoE)
-* Paper abstract submission: <del>9</del> <ins>23</ins> October 2026
-* Paper submission: <del>23</del> <ins>30</ins> October 2026
+* Paper abstract submission: 23 October 2026
+* Paper submission: 30 October 2026
 * Notification to authors: 20 December 2026
 * Camera-ready submission: 26 January 2027
 * IEEE FG 2027: 26-30 April 2027
@@ -382,7 +382,7 @@ Refer to <a href="https://fg2027.ieee-biometrics.org/" target="_blank" rel="noop
   function aoe(d){return new Date(d+"T23:59:00-12:00");}
   var now=new Date();
   var el=document.getElementById("countdown");
-  var dl=[["2026-10-09","abstract deadline"],["2026-10-16","paper deadline"]];
+  var dl=[["2026-10-23","abstract deadline"],["2026-10-30","paper deadline"]];
   var next=dl.find(function(d){return aoe(d[0])>now;});
   if(next){var days=Math.ceil((aoe(next[0])-now)/86400000);
     el.innerHTML="<b>"+days+"</b> "+(days===1?"day":"days")+" until the "+next[1];}
